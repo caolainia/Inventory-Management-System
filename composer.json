@@ -1,0 +1,16 @@
+{
+    "require": {
+        "google/apiclient":"^2.8.3",
+        "thiagoalessio/tesseract_ocr": "^2.11"
+    },
+
+    "scripts": {
+        "post-update-cmd": "Google\\Task\\Composer::cleanup"
+    },
+    "extra": {
+        "google/apiclient-services": [
+            "Drive",
+            "Sheets"
+        ]
+    }
+}

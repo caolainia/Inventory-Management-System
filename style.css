@@ -1,0 +1,1140 @@
+/*
+ Theme Name:   Astra Child
+ Description:  Astra Child Theme
+ Author:       Zhijie Visa
+ Template:     astra
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  astrachild
+*/
+body{
+	margin: 0;
+	display: flex !important;
+	min-height: 100vh !important;
+	flex-direction: column !important;
+}
+.card-md {
+    width: 100%; 
+    margin-top: 10vh; 
+    margin-bottom: 10vh;
+}
+
+#google-login-btn{
+    background: url(img/google_signin_buttons/web/2x/btn_google_signin_dark_normal_web@2x.png);
+}
+
+#google-login-btn :hover{
+    background: url(img/google_signin_buttons/web/2x/btn_google_signin_dark_pressed_web@2x.png);
+}
+
+#login-container{
+	max-width: 500px !important;
+	margin-bottom: 10rem;
+}
+
+#login-logo{
+	width: 50%;
+	height: auto;
+}
+
+#login-intro-link{
+	font-size: 16px;
+}
+
+.abcRioButton{
+	width: 100% !important;
+	margin: 0 auto;
+}
+
+.abcRioButtonContentWrapper{
+	width: 100% !important;
+	overflow: visible;
+}
+
+#privacy-footer{
+	text-align: center;
+}
+
+.wpkqcg_qrcode_wrapper{
+	text-align: center;
+	margin: 0 auto;
+}
+
+#qr-generate-btn{
+	margin-bottom: 10rem;
+	width: 50%;
+}
+
+.zhijie-grey{
+	background-color: #c9c7c8;
+}
+.zhijie-information-card{
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+.zhijie-small-font{
+	font-size: 0.9rem;
+}
+.zhijie-checkbox-oneline{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#div-detailed-steps{
+	display: none;
+}
+
+.bg-white{
+	background-color: white;
+}
+
+#div-show-detail:hover {
+	background-color: lightgray;
+	cursor: pointer;
+  }
+
+.bg-grey{
+
+	background-color: lightgray;
+}
+
+.zhijie-font-xl{
+	font-size: 2rem;
+}
+
+.zhijie-font-l{
+	font-size: 1.5rem;
+}
+
+/****************************/
+/******Navigation Bar********/
+/****************************/
+.main-header-menu > .menu-item:hover{
+	background-color: #fc5f64;
+	/* -webkit-transition: background-color 0.5s ease-out;
+	-moz-transition: background-color 0.5s ease-out;
+	-o-transition: background-color 0.5s ease-out;
+	transition: background-color 0.5s ease-out; */
+}
+.menu-item{
+	list-style-position:inside;
+    border: 1px solid;
+	border-color: white;
+}
+
+.main-header-menu > .menu-item:hover > .menu-link{
+	color: white !important;
+}
+
+.sub-menu > .current-menu-item {
+	background-color: white !important;
+}	
+.sub-menu > .current-menu-item > a {
+	color: #fc5f64 !important;
+}	
+
+.sub-menu > .menu-item:hover {
+	background-color: #fc5f64 !important;
+}	
+.sub-menu > .menu-item:hover > a {
+	color: white !important;
+}	
+
+.menu-item .menu-link{
+	color: #fc5f64 !important;
+}
+.site-title > a{
+	color: #fc5f64 !important;
+	font-size: 2rem !important;
+}
+.current-menu-item{
+	background-color: #fc5f64;
+	list-style-position:inside;
+    border: 1px solid;
+	border-color: white;
+}
+.current-menu-item > .menu-link{
+	color: white !important;
+}
+.site-branding{
+	margin-left: 2rem;
+}
+
+/**************************************/
+/*************Event List Page**********/
+/**************************************/
+.zhijie-swiper-img{
+	opacity: 0.9;
+}
+.zhijie-banner-section{
+	display:inline-block;
+	position:relative;
+	background-image: url(img/auction-swiper.jpg);
+	min-height: 500px;
+	/* max-width: 1200px; */
+	background-size: cover;
+    background-position: center top;
+}
+
+.zhijie-text{
+	color: #fc5f64 !important;
+}
+
+.zhijie-button{
+	background: #fc5f64 !important;
+	border-color: #fc5f64 !important;
+	border-width: 1.5px;
+}
+
+.zhijie-button:hover{
+	background: #e1053c !important;
+	border-color: #e1053c !important;
+}
+
+.btn-group> .zhijie-button-outline, .zhijie-button-outline-active{
+	margin:3px;
+}
+.zhijie-button-outline{
+	background: white;
+	color: #fc5f64 !important;
+	border-radius: .25rem !important;
+	border-color:#fc5f64 !important;
+	border-width: 1.5px !important;
+}
+.zhijie-button-outline:hover{
+	background: #fc5f64;
+	color: white !important;
+	border-radius: .25rem !important;
+	border-color:#fc5f64 !important;
+	border-width: 1.5px !important;
+}
+
+.zhijie-button-outline:focus{
+	background: #e1053c;
+	color: white !important;
+	border-radius: .25rem !important;
+	border-color:#e1053c !important;
+	border-width: 1.5px !important;
+}
+
+.button-auction-actived{
+	background: #e1053c;
+	color: white !important;
+	border-radius: .25rem !important;
+	border-color:#e1053c !important;
+	border-width: 1.5px !important;
+}
+
+.zhijie-button-outline-active{
+	background: white;
+	color: #49d049 !important;
+	border-radius: .25rem !important;
+	border-color:#49d049 !important;
+	border-width: 1.5px !important;
+}
+
+.zhijie-button-outline-active:hover{
+	background: #49d049;
+	color: white !important;
+	border-radius: .25rem !important;
+	border-color:#49d049 !important;
+	border-width: 1.5px !important;
+}
+
+.zhijie-button-outline-active:focus{
+	background: #40b640;
+	color: white !important;
+	border-radius: .25rem !important;
+	border-color:#40b640 !important;
+	border-width: 1.5px !important;
+}
+
+.button-active-actived{
+	background: #40b640;
+	color: white !important;
+	border-radius: .25rem !important;
+	border-color:#40b640 !important;
+	border-width: 1.5px !important;
+}
+
+.btn-outline-all{
+	background: white;
+	color: #2b29a5 !important;
+	border-radius: .25rem !important;
+	border-color:#2b29a5 !important;
+	border-width: 1.5px !important;
+}
+
+.btn-outline-all:hover{
+	background: #2b29a5;
+	color: white !important;
+	border-radius: .25rem !important;
+	border-color:#2b29a5 !important;
+	border-width: 1.5px !important;
+}
+
+.btn-outline-all:focus{
+	background: #222081;
+	color: white !important;
+	border-radius: .25rem !important;
+	border-color:#222081 !important;
+	border-width: 1.5px !important;
+}
+
+.btn-all-actived{
+	background: #222081;
+	color: white !important;
+	border-radius: .25rem !important;
+	border-color:#222081 !important;
+	border-width: 1.5px !important;
+}
+
+.zhijie-link{
+	color: #fc5f64 !important;
+}
+
+.logged-in-as > a{
+	color: #fc5f64 !important;
+}
+
+.form-submit > .submit{
+	background-color: #fc5f64 !important;
+}
+.menu-toggle-icon{
+	color: #fc5f64;
+}
+
+.zhijie-list-header{
+	margin-bottom: 3rem;
+}
+
+.site-content > .jumbotron{
+	min-height: 400px;
+	position: relative;
+    background-image: url(img/kara-eads-L7EwHkq1B2s-unsplash.jpg);
+    /* min-height: 400px; */
+	background-size: cover;
+    background-position: center;
+}
+
+.zhijie-register-button{
+	border-color: #fc5f64;
+	background-color: transparent;
+	color: #fc5f64;
+    max-width: 200px !important;
+    min-width: 190px !important;
+	white-space: nowrap;
+	border-radius: 15px;
+	border-width: 1.5px;
+}
+
+.zhijie-register-button:hover{
+	background: #fc5f64;
+	border-color: #fc5f64;
+    color: #fff;
+}
+
+.zhijie-register-button:focus{
+	border-color: #fc5f64;
+	background: #fc5f64;
+	color: white;
+}
+
+.zhijie-swiper-button-section{
+	display:inline-block;
+    position:absolute;
+    bottom: 22%;
+    left: 3%;
+    max-width: 800px !important;
+}
+.zhijie-link-sheet-button{
+	max-width: 200px !important;
+	min-width: 180px !important;
+	white-space: nowrap;
+}
+
+.zhijie-swiper-caption{
+	position: absolute;
+	bottom: 35%;
+	left: 7%;
+	color: white;
+	text-align: left;
+	font-size: 2rem;
+	width: 50%;
+	line-height: 1.8rem;
+}
+.zhijie-swiper-caption span{
+	font-size: 1.2rem;
+}
+@media only screen and (max-width: 575px) {
+  	.zhijie-swiper-caption{
+		left: 7%;
+		font-size: 1.5rem;
+		width: 80%;
+	}
+	.zhijie-register-button-container{
+		right: 23% ;
+	}
+	.zhijie-link-button-container{
+		right: 23%;
+		top: 10px;
+	}
+	.zhijie-link-sheet-button{
+		width: 190px;
+	}
+	.vertical-centered{
+		position: absolute;
+		top: 50%;
+	}
+}
+
+#zhijie-news-section{
+	margin: 0 auto;
+	max-width: 1100px;
+}
+
+/* .zhijie-event-card{
+	background-color: white;
+	border: 1px solid white;
+	border-radius: 5px;
+	margin-top: 1rem;
+	text-align: left;
+	cursor: pointer;
+	padding: 5px;
+	justify-content: space-between;
+	display: flex;
+	flex-direction: row;
+}
+.zhijie-event-card:hover {
+	background-color: #ddd;
+}
+.zhijie-event-card-right{
+	max-width: 40%;
+} */
+
+.zhijie-event-card{
+
+	/* margin-right: 1px;
+	margin-left: 1px; */
+	height: 100%;
+}
+
+#list-row > div > .zhijie-event-card{
+	cursor: pointer;
+}
+
+.zj-inspection-card-banner{
+	background-color: #49d049;
+	color: white;
+}
+
+.zj-auction-card-banner{
+	background-color: #fc5f64;
+	color: white;
+
+}
+
+.zhijie-card-header:first-child{
+	border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+}
+
+.zhijie-card-header{
+	padding: .5rem 1rem;
+	font-weight: bold;
+	margin-bottom: 0;
+	border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.event-list-container{
+	width: 100%;
+}
+
+.zhijie-shadow {
+  -moz-box-shadow:    0px 0px 3px 1px rgba(132,121,129,0.4);
+  -webkit-box-shadow: 0px 0px 3px 1px rgba(132,121,129,0.4);
+  box-shadow:         0px 0px 3px 1px rgba(132,121,129,0.4);
+}
+
+.zhijie-shadow:hover{
+	-moz-box-shadow:    3px 3px 3px 3px rgba(132,121,129,0.4);
+	-webkit-box-shadow: 3px 3px 3px 3px rgba(132,121,129,0.4);
+	box-shadow:         3px 3px 3px 3px rgba(132,121,129,0.4);
+}
+
+
+.zhijie-post-card{
+	display: table-cell;
+	padding: 3px;
+	height: 100%;
+}
+.zhijie-post-card-inner{
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	min-height: auto;
+}
+.zhijie-post-card-text{
+	display: flex;
+	flex-direction: column;
+	height: 70%;
+}
+.zhijie-post-card-title > a{
+	color: #939393;
+	font-size: 1.1rem;
+	line-height: 1.5rem;
+	/*text-align: left;*/
+	height: 18%;
+	
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.zhijie-post-card-content{
+	max-height: 130px;
+	font-size: 0.9rem;
+	line-height: 1rem;
+	text-overflow: ellipsis;
+}
+#zhijie-continue-reading-button{
+	font-size: 0.9rem;
+	line-height: 0.9rem;
+	color: #fb2056;
+	background-color: white;
+	border-radius: 15px;
+	border-color: #fb2056;
+	border-width: 1.5px;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+}
+
+#zhijie-continue-reading-button:hover{
+	color: white;
+	background-color: #fb2056;
+}
+
+.zhijie-client-info-card{
+	background-color: white;
+	border: 1px solid white;
+	border-radius: 5px;
+	margin-top: 1rem;
+	text-align: left;
+	padding: 5px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+/**************************************/
+/***Event Registration Result Page*****/
+/**************************************/
+.zj-result-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.zhijie-event-info-card{
+	border-radius: 3px;
+	border: 1px solid red;
+	color: black;
+	margin: 0 auto;
+	width: 50% !important;
+	min-width: 288px !important;
+	max-width: 400px !important;
+}
+.zj-einfo-title{
+	color: black;
+	font-weight: normal;
+}
+.zj-einfo-value{
+	display: block;
+	float: right;
+	color: black;
+	margin-bottom: 1rem;
+}
+.zj-post-section{
+}
+.zj-post-section-inspection{
+	max-width: 600px;
+	width: 90%;
+	margin: 0 auto;
+}
+/**************************************/
+/*******Event Detail Page**************/
+/**************************************/
+.zhijie-detail-card{
+	margin: 0 auto;
+	width: 80%;
+	max-width: 600px !important;
+}
+
+#fep-post-title{
+	width: 100% !important;
+}
+
+#fep-submit-post{
+	background: #fc5f64 !important;
+	border-color: #fc5f64 !important;
+}
+
+#fep-submit-post:hover{
+	background: #e1053c !important;
+	border-color: #e1053c !important;
+}
+
+.bg-active{
+	background-color: #49d049 !important;
+}
+
+.bg-inactive{
+	background-color: #ff751a !important;
+}
+
+.bg-expired{
+	background-color: #ff4d4d !important;
+}
+
+.zhijie-post-wrapper{
+	margin: 0 auto;
+	width: 80%;
+	max-width: 600px !important; 
+}
+
+.card-container{
+	max-width: 500px !important;
+	margin-bottom: 10rem;
+}
+
+.zhijie-page-alert{
+	font-size: 36px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 80px;
+}
+.zj-post-alert{
+	background-color: #fc5f64;
+	color: white;
+	line-height: 2rem;
+}
+
+
+
+.ast-container{
+	padding: 0 !important;
+}
+/*Client Registration Result Page*/
+.zhijie-ticket-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #ffd500;
+	width: 100%;
+	height: 100vh;
+}
+#zhijie-register-detail-title{
+	text-align: center;
+}
+.zhijie-thanks-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100%;
+}
+.zhijie-ticket-banner{
+	width: 50%;
+	height: 30vh;
+	min-width: 320px;
+	min-height: 26rem;
+	background-color: white;
+	position: relative;
+	text-align: center;
+}
+.zhijie-banner-content{
+	width: 100%;
+	font-size: 40px;
+	position: absolute;
+	bottom: 5%;
+	text-align: center;
+	overflow: hidden;
+}
+
+.zhijie-green-check-round{
+	position: absolute;
+	border-radius: 50%;
+	max-width:50%;
+	width: auto;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+.zhijie-ticket-no{
+	font-size: 600px;
+	text-align: center;
+}
+.zhijie-ticket-detail{ 
+	font-size: 22px;
+	width: 50%;
+	min-width: 320px !important;
+}
+
+#get-event-id{
+	display: none;
+}
+
+#get-home-url{
+	text-align: center;
+}
+canvas#signature {
+  border: 2px solid black;
+}
+
+/*******************************/
+/************Footer*************/
+/*******************************/
+.zhijie-site-spacer{
+	flex: 1 !important;
+}
+.zhijie-sticky-footer{
+	width: 100%;
+	background: #000033;
+	color: white;
+	text-align: center;
+	line-height: 1.5rem;
+	height: 5rem;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.zhijie-big-footer{
+	width: 100%;
+	background: black;
+	color: white;
+	text-align: center;
+	line-height: 10rem;
+	height: 10rem;
+	font-size: 16px;
+	position: fixed;
+	z-index: 9999;
+	bottom: 0;
+}
+.zj-footer-term{
+	color: #fc5f64 !important;
+	text-decoration: underline;
+}
+
+#btn-add-row{
+	background: url(img/icons/note_add-24px.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 37px;
+	height: 36px;
+}
+
+#btn-edit-row{
+	background: url(img/icons/info-24px.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 37px;
+	height: 36px;
+}
+
+.options-group{
+	position: relative;
+    top: 0px;
+    right: 0px;
+}
+
+#editing-container{
+	background-color: darkgray;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.fw-bolder{
+	font-weight: bolder!important
+}
+.zhijie-sidebar-post-section{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.zhijie-sidebar-post-section-title{
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+.zhijie-post-title{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+
+.row > .btn-add-auction{
+	position: absolute;
+	right: 1rem;  
+	color: #a64dff;
+	border-radius: 10%;
+	border-color: #a64dff;
+}
+
+.row > .btn-add-auction:hover{
+	color: white;
+	background-color: #a64dff;
+}
+
+.row > .btn-add-auction:focus {     
+    background-color:#8000ff;    
+}
+
+.list-group-item{
+	min-height: 4rem;
+}
+
+.div_li{
+	width: 75%;
+}
+
+.google-login-wrapper{
+	width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login-wrapper >.btn-light-outline{
+	color:#fc5f64;
+	background-color: white;
+	border-radius: 12px;
+	border-color: #fc5f64;
+	border: 2px solid;
+}
+
+.login-wrapper >.btn-light-outline:hover{
+	color: white;
+	background-color: #fc5f64;
+	border-color: #fc5f64;
+}
+
+.login-wrapper >.btn-light-outline:focus{
+	color: white;
+	background-color: #fb373e;
+	border-color: #fb373e;
+}
+
+.fw-light {
+	font-weight: 300 !important;
+}
+
+.fst-italic{
+	font-style: italic !important;
+}
+
+.auctions-list-wrapper{
+	margin: 0 auto;
+}
+.zj-auctions-list-title{
+	font-weight: bold;
+	font-size: 2rem;
+}
+.zhijie-auctions-list{
+	min-height: 300px;
+	padding: 0 20px;
+}
+
+tr:nth-child(2n){
+	background-color:#cccccc;
+}
+
+.zhijie-tr-clickable:hover{
+	cursor: pointer;
+}
+
+.zhijie-list-group{
+	position: absolute;
+
+}
+
+#ul-link-sheet {
+	margin-left: 1rem !important;
+}
+
+.zhijie-list-group > a:hover{
+	cursor: pointer !important;
+}
+
+.div-scroll{
+	height: 10rem;
+	overflow-y: scroll;
+}
+
+
+/*************************/
+/***Auction Operation*****/
+/*************************/
+#zhijie-auction-operation-body{
+}
+.zhijie-going-button-list{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.zhijie-going-button-1{
+	border: 2px solid green;
+	background: white;
+	color: green;
+}
+.zhijie-going-button-1:hover{
+	border: 2px solid green;
+	background: green;
+	color: white;
+}
+.zhijie-going-button-2{
+	border: 2px solid #eba607;
+	background: white;
+	color: #eba607;
+}
+.zhijie-going-button-2:hover{
+	border: 2px solid #eba607;
+	background: #eba607;
+	color: white;
+}
+.zhijie-going-button-3{
+	border: 2px solid #bf0407;
+	background: white;
+	color: #bf0407;
+}
+.zhijie-going-button-3:hover{
+	border: 2px solid #bf0407;
+	background: #bf0407;
+	color: white;
+}
+#zhijie-confirm-bid{
+	border: 1px solid #fc5f64;
+    background-color: white;
+    color: black;
+	margin: 0 auto;
+	display: block;
+	border-radius: 5px;
+}
+#bidding-price-button-list{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.zhijie-price-edit-button{
+	max-width: 45px !important;
+	white-space: nowrap;
+	overflow: hidden;
+	padding: 5px 3px !important;
+	border-radius: 2px;
+}
+@media only screen and (min-width: 575px) {
+	.zhijie-price-edit-button{
+		max-width: 50px !important;
+		padding: 5px 5px !important;
+	}
+}
+@media only screen and (min-width: 768px) {
+	.zhijie-price-edit-button{
+		max-width: 60px !important;
+		padding: 5px 8px !important;
+	}
+}
+.edit-left{
+	border: 1px solid green;
+	background: white;
+	color: green;
+}
+.edit-right{
+	border: 1px solid #bf0407;
+	background: white;
+	color: #bf0407;
+}
+.zhijie-price-edit-button:focus{
+	outline: none !important;  
+	box-shadow: none !important;
+}
+.zj-confirm-success{
+	position: relative;
+	top: -30rem;
+	z-index: 9999;
+	color: green;
+	opacity: 1;
+	font-size: 10rem;
+	border: 2px solid green;
+	border-radius: 50%;
+}
+
+.auction-search-input{
+    position: absolute;
+    top: 25%;
+    /* left: 40%; */
+    min-width: 100%;
+}
+
+.btn-remove-auction{
+	color: crimson !important;
+}
+
+.bg-gradient-default {
+    background: linear-gradient(87deg, #646b79 0, #32313a 100%) !important;
+}
+
+.opacity-8{
+	opacity: .8;
+}
+
+.opacity-4{
+	opacity: .4;
+}
+
+.mask{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .15s ease;
+}
+
+.auction-list-header{
+	-webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-color: black;
+	position: relative;
+}
+
+.vertical-centered{
+	margin: auto;
+}
+
+.thumbnail {
+    height: 225px;
+    width: 100%;
+    display: block;
+}
+
+.site-content{
+	margin-bottom: 4rem;
+}
+
+.border-purple{
+	border-color: #a64dff !important;
+}
+
+
+div > .zhijie-link-sheet-button{
+	color: #a64dff;
+	background-color: white;
+	border-radius: 15px;
+	border-color: #a64dff;
+	border-width: 1.5px;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+}
+
+div > .zhijie-link-sheet-button:hover{
+	color: white;
+	background-color: #a64dff;
+}
+
+.dropdown-menu{
+	position: relative !important;
+	top: -12px !important;
+	left: -10px !important;
+	width: 200px !important;
+	z-index: 9999;
+}
+
+.dropdown{
+	display: flex !important;
+	flex-direction: column !important;
+}
+
+li > .dropdown-item:hover{
+	cursor: pointer;
+}
+
+.main-header-container{
+	background-color: white;
+	
+}
+
+li > .menu-link{
+	color: black !important;
+}
+.max-size-control{
+	height: 50vh;
+	width: 80%;
+}
+
+/**************************************/
+/****************OCR*******************/
+/**************************************/
+.zj-ocr-body{
+	margin: auto;
+	width: 45%;
+	padding-top: 10rem;
+}
+.zj-upload-section{
+	margin: 0 auto;
+	width: 45%;
+	padding: 10px;
+}
+.zj-upload-alert{
+	font-size: 1.2rem;
+	font-weight: bold;
+	background: lightgreen;
+	height: 5rem;
+	width: 30rem;
+	margin-left: 30%;
+	line-height: 2rem;
+	text-align: center;
+	border: 2px solid white;
+	border-radius: 10px;
+
+}
+
+.loader {
+  border: 16px solid lightgreen; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
