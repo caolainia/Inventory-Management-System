@@ -880,18 +880,6 @@
       //verify if recird alredy exists in db
       $field_name = 'ID';
 
-    //   $prepared_statement = $wpdb->prepare( "SELECT {$field_name} FROM {$table_name} WHERE 
-    //   Address = %s 
-    //   AND Datetime = %s 
-    //   AND Agent = %s
-    //   AND contact_number = %s", 
-    //   $array['Address'], 
-    //   $array['Datetime'], 
-    //   $array['Agent'],
-    //   $array['contact_numbers'],
-    //   $array['additional_links']
-    // );
-
       $validate_statement = $wpdb->prepare( "SELECT {$field_name} FROM {$table_name} WHERE 
         Address = %s 
         AND Datetime = %s",
@@ -1488,49 +1476,49 @@ function endsWith( $haystack, $needle ) {
   return substr( $haystack, -$length ) === $needle;
 }
 
-  // // Match wp_users and wp_zhijie_users. Run It ONLY WHEN NECESSARY!!!
-  // add_action("init", "match_users_wp_zhijie");
-  // function match_users_wp_zhijie() {
-  //   // exist in wp_users but not in wp_zhijie_users
-  //   // get all user_ids from wp_users
+function add_product_to_db($a) {
+  global $wpdb;
+  $table_name = 'wp_jose_products';
+  //verify if recird alredy exists in db
+  $field_name = 'ID';
 
-  //   global $wpdb;
-  //   $field_name = 'ID';
-  //   $table_name = $wpdb->prefix . "users";
-  //   $prepared_statement = $wpdb->prepare( "SELECT * FROM {$table_name}");
-  //   $values = $wpdb->get_results( $prepared_statement );
+  $validate_statement = $wpdb->prepare( "SELECT {$field_name} FROM {$table_name} WHERE 
+    product_name = %s 
+    AND valid_duration = %s",
+    $a['product_name'], 
+    $a['valid_duration']
+  );
 
-  //   $all_ids = array();
-  //   $to_do_ids = array();
-  //   $existed_ids = array();
-  //   foreach($values as $key=>$row){
-      
-  //     $user_id = $row->ID;
-  //     array_push($all_ids, $user_id); 
-  //     $field_name = 'user_id';
-  //     $table_name = $wpdb->prefix . "zhijie_users";
-  //     $prepared_statement = $wpdb->prepare( "SELECT * FROM {$table_name} where user_id = %d", $user_id);
-  //     $exists = $wpdb->get_results( $prepared_statement );
-  //     foreach($exists as $key => $row2) {
-  //       array_push($existed_ids, $row2->user_id);
-  //     }
-  //   }
-  //   $to_do_ids = array_diff($all_ids, $existed_ids);
-  //   print_r($to_do_ids);
+  $values = $wpdb->get_col( $validate_statement );
+  if(count($values) == 0){
+    $format = array('%s', '%s', '%s');
+    $wpdb->insert($table_name, $array, $format);
 
-  //   $zhijie_table = $wpdb->prefix . "zhijie_users";
-  //   foreach($to_do_ids as $to_do_id) {
-  //     $table_name = $wpdb->prefix . "users";
-  //     $prepared_statement = $wpdb->prepare( "SELECT * FROM {$table_name} where ID=%d", $to_do_id);
-  //     $values = $wpdb->get_results( $prepared_statement );
-  //     $data = array();
-  //     foreach($values as $key=>$row){
-  //       $data['user_name'] = $row->user_login;
-  //       $data['user_email'] = $row->user_email;
-  //       $data['user_id'] = $row->ID;
-  //     }
-  //     $format = array('%s','%s', '%d');
-  //     $num = $wpdb->insert($zhijie_table, $data, $format);
-  //   }
-    
-  // }
+    $validate_statement = $wpdb->prepare( "SELECT {$field_name} FROM {$table_name} WHERE 
+      Address = %s 
+      AND Datetime = %s",
+      $array['Address'], 
+      $array['Datetime']
+    );
+    $values = $wpdb->get_col( $validate_statement );
+    $value = array_pop($values);
+    return $value;
+  }
+  else{
+    return false;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

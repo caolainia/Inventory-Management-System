@@ -10,6 +10,7 @@ get_header(); ?>
       </div>
         <div class="col-12 container">
           <form id="addProduct" name="form" action="<?php echo home_url() . "/product-operation-result";?>" method="post" class='bg-light mt-2 p-3'>
+          	
               <div class="row mb-3">
                   <label class="col-sm-3 col-form-label">Product Name<span style="color:red">*</span>: </label>
                   <div class="col-sm-9">

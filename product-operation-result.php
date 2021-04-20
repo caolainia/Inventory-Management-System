@@ -5,26 +5,25 @@ get_header(); ?>
 <div class="zj-result-container">
     <?php
     if (isset($_POST["productName"]) 
-     && isset($_POST["productDuration"]) 
-     && isset($_POST["productSupplierSelect"]) 
-     && isset($_POST["productCategorySelect"])):
+     && isset($_POST["productDuration"])):
         $name = $_POST["productName"];
         $duration = $_POST["productDuration"];
-        $supplier = $_POST["productSupplierSelect"];
-        $category = $_POST["productCategorySelect"];
 
         date_default_timezone_set('Australia/Adelaide');
         $current_date = date("Y-m-d");
         $current_time = date("h:i");
+        $datetime = $current_date . " " . $current_time;
 
-        $array = array('Address' => $address, 'Agent' => $agent, "Datetime" => $datetime, "comment" => $note, "User_id" => $user_id, "contact_numbers" => $contactNumberStr, "additional_links" => $addtional_links_str);
+        $array = array('product_name' => $name, 'valid_duration' => $duration, "initial_date" => $datetime);
+
+        var_dump($array);
 
         //add data to db
-        $status = add_event_to_db($array);
+        $status = add_product_to_db($array);
         ?>
 
             <?php if($status == false) : ?>
-                <h3 class="mt-5 text-center">Unable to register the event because the event has been registered already!</h3>
+                <h3 class="mt-5 text-center">Unable to register the product because the product has been registered already!</h3>
             <?php else : ?>
                 <?php 
                     //generate url like: www.myrefii.com/client-registration?event_id=1
@@ -83,7 +82,7 @@ get_header(); ?>
                     </div>
                 </div>
             <?php endif ; ?>
-        <?php endif ; ?>
+
     <?php else : ?>
         <div class="zhijie-page-alert">Cannot add product, as there is no info provided.</div>
     <?php endif ; ?>
